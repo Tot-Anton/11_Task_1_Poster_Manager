@@ -41,7 +41,7 @@ public class MoviePosterManager {
     public MovieObject[] getAll() {
         // вычисление правильного ожидаемого размера результирующего массива-ответа
         int resultLength = numberFilms;
-        if (films.length < resultLength) {
+        if (films.length <= resultLength) {
             resultLength = films.length;
         } else {
             resultLength = numberFilms;
