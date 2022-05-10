@@ -56,5 +56,12 @@ public class MoviePosterManager {
         return result;
     }
 
+    //вывод всех фильмов в порядке добавления
+    public MovieObject[] findAll() {
+        MovieObject[] result = new MovieObject[films.length];
+        System.arraycopy(films, 0, result, 0, result.length);
+        return result;
+    }
+
 
 }
